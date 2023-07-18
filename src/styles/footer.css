@@ -5,10 +5,8 @@
 }
 
 footer {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  top: 14rem;
 }
 
 .footer_container {

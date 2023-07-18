@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Helmet from "react-helmet";
+import Helmet from "react-helmet-async";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../styles/products.css";
@@ -17,22 +17,23 @@ useEffect(() => {
 
   return (
     <>
-      <Helmet>
-        <title>MyElement</title>
-      </Helmet>
       <div className="products_page">
+        <Helmet>
+          <title>MyElement</title>
+        </Helmet>
         <Navbar />
         <div className="product_container">
           {products.map((product) => (
             <div key={product.id} className="product_card">
-              <img src={product.img_path} />
+              <img src={product.img_path} alt={product.title} />
               <h4>{product.title}</h4>
               <p>{product.description}</p>
               <span>${product.price}</span>
+              <button className="add_cart">ADD TO CART</button>
             </div>
           ))}
         </div>
-        <Footer />
+        <Footer className="footer_products"/>
       </div>
     </>
   );

@@ -5,15 +5,48 @@
   background-color: #250048;
   background-blend-mode: overlay;
   width: 100vw;
-  height: 100vh;
 }
 
 .product_container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
 .product_card {
     color: snow;
-    transform: scale(0.8)
+    transform: scale(0.7);
+    border: 3px solid black;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    width: 50%;
+    background-image: url(../images/background2.jpeg);
 }
+
+.product_card:hover {
+  transform: scale(0.8);
+  transition: 350ms ease-in;
+}
+
+.product_card img {
+  height: 200px;
+  width: 50%
+}
+
+.add_cart {
+  color: snow;
+  text-decoration: none;
+  border-radius: 0.8rem;
+  padding: 0.6rem;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #8300ff;
+  transition: all 0.2s ease;
+  height: 3rem;
+}
+
+.add_cart:hover {
+  background-color: #41007f;
+}
+

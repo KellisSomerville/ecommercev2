@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet";
+import Helmet from "react-helmet-async";
 import Img1 from "../images/img1.jpeg";
 import Img2 from "../images/img2.jpeg";
 import Img3 from "../images/img3.jpeg";
@@ -42,7 +42,7 @@ export default function home() {
         </button>
       </div>
       </div>
-      <Footer />
+      <Footer className="footer_home"/>
     </div>
   );
 }

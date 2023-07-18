@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Helmet from "react-helmet";
+import Helmet from "react-helmet-async";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../styles/contact.css";
@@ -102,7 +102,7 @@ export default function Contact() {
           </div>
         </div>
       </form>
-      <Footer />
+      <Footer className="footer_contact" />
     </div>
   );
 }
