@@ -1,0 +1,8 @@
+/* RESPONSIVNESS */
+@media (min-width: 390px) and (max-width: 574px) {
+  .slider {
+    transform: scale(0.7);
+    position: relative;
+    right: 5rem;
+  }
+}

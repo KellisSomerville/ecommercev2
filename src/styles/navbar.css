@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.title_and_logo {
+  display: flex;
+}
+
+.navbar img {
+  height: 25px;
+  width: 25px;
+}
+
+.navbar h2 {
+  text-decoration: none;
+  color: snow;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  position: relative;
+  bottom: 0.2rem;
+}
+
+.navbar li {
+  margin: 0.7rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  cursor: pointer;
+  color: snow;
+  transition: all 0.2s ease;
+}
+
+.navbar a:hover {
+  color: #8300ff;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 626px) and (min-width: 390px) {
+  .navbar {
+    transform: scale(0.7);
+  }
+}
