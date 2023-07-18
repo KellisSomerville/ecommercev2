@@ -8,3 +8,7 @@
   height: 100vh;
 }
 
+.product_card {
+    color: snow;
+    transform: scale(0.8)
+}

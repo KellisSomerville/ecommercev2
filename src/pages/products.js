@@ -8,16 +8,12 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
 useEffect(() => {
-  fetch("/products")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json();
-    })
+  fetch("http://localhost:5000/products")
+    .then((response) => response.json())
     .then((data) => setProducts(data))
-    .catch((error) => console.error("Error fetching products:", error.message));
+    .catch((error) => console.error("Error fetching products:", error));
 }, []);
+
 
   return (
     <div className="products_page">
