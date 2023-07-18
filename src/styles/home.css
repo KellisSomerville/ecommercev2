@@ -17,6 +17,11 @@
   height: 100vh;
 }
 
+.home_container {
+  position: relative;
+  top: 4rem;
+}
+
 .home_page h3 {
   color: snow;
   text-align: center;

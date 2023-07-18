@@ -16,22 +16,25 @@ useEffect(() => {
 
 
   return (
-    <div className="products_page">
+    <>
       <Helmet>
         <title>MyElement</title>
       </Helmet>
-      <Navbar />
-      
-      {products.map((product) => (
-        <div key={product.id} className="product_card">
-          <img src={product.img_path} />
-          <h4>{product.title}</h4>
-          <p>{product.description}</p>
-          <span>${product.price}</span>
+      <div className="products_page">
+        <Navbar />
+        <div className="product_container">
+          {products.map((product) => (
+            <div key={product.id} className="product_card">
+              <img src={product.img_path} />
+              <h4>{product.title}</h4>
+              <p>{product.description}</p>
+              <span>${product.price}</span>
+            </div>
+          ))}
         </div>
-      ))}
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 

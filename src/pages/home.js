@@ -31,6 +31,7 @@ export default function home() {
         <title>MyElement</title>
       </Helmet>
       <Navbar />
+      <div className="home_container">
       <h3>THE FUTURE OF GAMING IS HERE!</h3>
       <br></br>
       <div style={containerStyles}>
@@ -39,6 +40,7 @@ export default function home() {
         <button className="shop_now">
           <a href="/products">SHOP NOW!</a>
         </button>
+      </div>
       </div>
       <Footer />
     </div>
