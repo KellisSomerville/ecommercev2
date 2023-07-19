@@ -18,13 +18,13 @@ export default function Footer() {
               <h4>COMPANY</h4>
               <ul>
                 <li>
-                  <a href="#">About Us</a>
+                  <a href="/home">About Us</a>
                 </li>
                 <li>
-                  <a href="#">Services</a>
+                  <a href="/home">Services</a>
                 </li>
                 <li>
-                  <a href="#">Policies</a>
+                  <a href="/home">Policies</a>
                 </li>
               </ul>
             </div>
@@ -32,13 +32,13 @@ export default function Footer() {
               <h4>FAQ</h4>
               <ul>
                 <li>
-                  <a href="#">Payment Options</a>
+                  <a href="/home">Payment Options</a>
                 </li>
                 <li>
-                  <a href="#">Order Status</a>
+                  <a href="/home">Order Status</a>
                 </li>
                 <li>
-                  <a href="#">Shipping</a>
+                  <a href="/home">Shipping</a>
                 </li>
               </ul>
             </div>
@@ -46,10 +46,10 @@ export default function Footer() {
               <h4>ONLINE SHOP</h4>
               <ul>
                 <li>
-                  <a href="#">Build Your Own PC</a>
+                  <a href="/home">Build Your Own PC</a>
                 </li>
                 <li>
-                  <a href="#">Prebuilt PCs</a>
+                  <a href="#/home">Prebuilt PCs</a>
                 </li>
               </ul>
             </div>
