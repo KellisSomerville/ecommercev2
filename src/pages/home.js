@@ -1,5 +1,5 @@
 import React from "react";
-import Helmet from "react-helmet-async";
+import Helmet from "react-helmet";
 import Img1 from "../images/img1.jpeg";
 import Img2 from "../images/img2.jpeg";
 import Img3 from "../images/img3.jpeg";

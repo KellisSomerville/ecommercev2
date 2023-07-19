@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Helmet from "react-helmet-async";
+import Helmet from "react-helmet";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../styles/contact.css";
